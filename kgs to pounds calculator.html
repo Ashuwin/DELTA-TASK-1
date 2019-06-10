@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>kgs to pounds converter</title>
+</head>
+<body>
+	<p >Your weight(in kgs)</p>
+	<input type="number" id="kgs">
+	<button>convert</button>
+
+	<p >Your weight(in pounds)<span id="answer">0</span></p>
+	<script>
+
+		
+        var conversion=()=>{
+        	
+            
+        	document.getElementById("answer").innerHTML='<br>'+(document.getElementById("kgs").value)*2.20462262185;
+
+        }
+
+        var btn=document.querySelector("button");
+        btn.addEventListener("click",conversion);
+
+     </script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+#breakfast{
+	background-color: #ffcccc;
+}
+
+#lunch{
+	background-color: #ff9999;
+}
+
+#snacks{
+	background-color: #ff6666;
+}
+
+#dinner{
+	background-color: #ff4d4d;
+}
+
+#extra{
+	background-color: #ffe6e6;
+
+}
+
+span{
+	font-size: 1.2em;
+}
+
+input[type='text']{
+	font-size: 1.1em;
+	text-align: center;
+}
+
+input[type='number']{
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#finalCalorie{
+	display:inline-block;
+}
+
+#finalWater{
+	display:inline-block;
+}

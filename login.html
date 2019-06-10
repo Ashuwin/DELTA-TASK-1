@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <script type="text/javascript">
+        function login()
+        {
+            var username= document.getElementById("uname");
+            var password= document.getElementById("pass");
+            if(username.value=="")
+            {
+                alert("no username");
+                username.style.border="solid 3px red";
+                return false;
+            }
+            else if(password.value=="")
+            {
+                alert("no password");
+                password.style.border="solid 3px red";
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
+            
+        }
+    </script>                             
+</head>
+<body>
+    <div id="login">
+	<form action="index.html" onsubmit= "return login();">
+		<label>Username</label>
+		<input type="text" placeholder="username" id="uname">
+		<br><br>
+
+		<label>Password</label>
+		<input type="Password" placeholder="Password" id="pass" >
+		<br><br>
+
+		<button type="submit" >Submit</button>
+	</form>
+    </div>
+ </body>
+ </html>

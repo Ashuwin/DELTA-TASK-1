@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+	<header>
+		<h2>Daily Calories Requirement</h2>
+	</header>
+
+	<main>
+		<div id="input1">
+			
+				<div id="hei">
+				Height(in inches):<input type="number" placeholder="Enter your height" id="h">
+                <a href="cm to inches calculator.html">cms to inches converter</a>
+                
+			    </div>
+
+			    <div id="wei">
+				Weight(in pounds):<input type="number" placeholder="Enter your weight" id="w">
+				<a href="kgs to pounds calculator.html">kgs to lbs converter</a>
+				
+			    </div>
+
+			    <div id="ag">
+				Age(in years):<input type="number" placeholder="Enter your age" id="a">
+				
+			    </div>
+
+			    <div id="rad">
+                Sex:Male<input type="radio" id="sex1"name="sex" id="m" value="male" onclick="calculateBMR()">
+                    Female<input type="radio" id="sex2" name="sex" id="f" value="female" onclick="calculateBMR()">
+			    
+			    </div>
+
+			    <div id="drop">
+				Your exercise life:<br>
+					Sedentary<input type="radio"id="exercise1" name="exercise" value="first" onclick="calculateCalorie()"><br>
+					Exercise/sports 1-3days/week<input type="radio" id=exercise2 name="exercise" value="second"onclick="calculateCalorie()"><br>
+					Exercise/sports 3-5days/week<input type="radio" id="exercise3" name="exercise" value="third"onclick="calculateCalorie()"><br>
+				    Exercise/sports 6-7days/week<input type="radio" id="exercise4"name="exercise" value="fourth"onclick="calculateCalorie()"><br>
+					Very hard exercise/sports<input type="radio" id="exercise5"name="exercise" value="fifth"onclick="calculateCalorie()">
+                   
+                </div>
+                
+                <div>
+                	<button>submit</button>
+                
+                </div> 
+               <div id="answer">
+               <p>ur daily calorie requirement(in kcals)  <span id="final">0</span></p>
+               <p>ur daily water requirement(in litres)  <span id="finale">0</span></p> 
+               </div>
+                   
+                   <a href="calories.html">continue</a>
+        
+            </main>
+
+        <script>
+            let BMR=0;
+            let calorie=0;
+            let water=0;
+            let weight;
+            let height;
+            let age;
+            function final(){
+            	 
+            var sex1=document.getElementById("sex1");            
+            var sex2=document.getElementById("sex2");
+            var exercise1=document.getElementById("exercise1");
+            var exercise2=document.getElementById("exercise2");
+            var exercise3=document.getElementById("exercise3");
+            var exercise4=document.getElementById("exercise4");
+            var exercise5=document.getElementById("exercise5");
+            document.getElementById("final").innerHTML=calorie.toFixed(2);
+            document.getElementById("finale").innerHTML=water;
+            
+            }
+
+            function calculateBMR(){
+        		if(sex1.checked==true){
+                weight=Number(document.getElementById("w").value);
+        	    height=Number(document.getElementById("h").value);
+        	    age=Number(document.getElementById("a").value);
+                    
+        			BMR=66+(6.3*weight)+(12.9*height)-(6.8*age);
+        			 water=3.7;
+        		}if(sex2.checked==true){
+        			weight=Number(document.getElementById("w").value);
+        	        height=Number(document.getElementById("h").value);
+        	        age=Number(document.getElementById("a").value);
+                
+        			BMR=655+(4.3*weight)+(4.7*height)-(4.7*age);
+        			 water=2.7;
+                 }}
+            function calculateCalorie(){
+                
+        		if(exercise1.checked==true){
+        			calorie=BMR*1.2;
+        		}
+        		else if(exercise2.checked==true){
+        			calorie=BMR*1.375;
+        		}
+        		else if(exercise3.checked==true){
+        			calorie=BMR*1.55;
+        		}
+        		else if(exercise4.checked==true){
+        			calorie=BMR*1.725;
+        		}
+        		else if(exercise5.checked==true){
+        			calorie=BMR*1.9;
+        		}}
+            var btn=document.querySelector("button");
+            btn.addEventListener("click",final);
+            
+
+         
+        </script>
+    
+</body>
+</html>
+
+
+
+
+        

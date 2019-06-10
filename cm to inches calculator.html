@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>cms to inches converter</title>
+</head>
+<body>
+	<p >Your height(in cms)</p>
+	<input type="number" id="cms">
+	<button>convert</button>
+
+	<p id="inches">Your height(in inches)<span id="answer">0</span></p>
+	<div id="output"></div>
+	<script>
+
+		
+        var conversion=()=>{
+        	
+            var Ashuwin=(document.getElementById("cms").value)/2.54
+        	document.getElementById("answer").innerHTML=Ashuwin.toFixed(2);
+
+        }
+
+        var btn=document.querySelector("button");
+        btn.addEventListener("click",conversion);
+       
+       
+     </script>
+</body>
+</html>
+
