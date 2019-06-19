@@ -10,7 +10,297 @@
  <body>
  	<div id="input2">
  		
+ 		<div id="extra"><!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Track Your Calories</title>
+ 	<link rel="stylesheet" href="stylecalories.css">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ </head>
+ <body>
+ 	<div id="input2">
+ 		
  		<div id="extra">
+
+        <div id="c">
+        <label><h3>Your daily calorie requirement:(in kcals) </h3></label><input type="number" id="finalCalorie" placeholder="calorie requirement">
+ 	    </div>
+
+        <div id="w">
+        <label><h3>Your daily water requirement:(in mL) </h3></label><input type="number" id="finalWater" placeholder="water requirement">
+        </div>
+
+        <a href="https://www.nhs.uk/live-well/healthy-weight/calorie-checker/"><p>Click here to find the amount of calories in various food items</p></a>
+
+        </div>
+
+        <p><h3>Add Water Consumption:</h3></p>
+
+        <div id="Water"> 
+             
+
+            <label>Water Consumption 01 :</label> <input type="number" id="water1" placeholder="water">
+            <br>
+            <label>Water Consumption 02 :</label> <input type="number" id="water2" placeholder="water">
+            <br>
+            <label>Water Consumption 03 :</label> <input type="number" id="water3" placeholder="water">
+            <br> 
+            <label>Water Consumption 04 :</label> <input type="number" id="water4" placeholder="water">
+            <br>
+            <label>Water Consumption 05 :</label> <input type="number" id="water5" placeholder="water">
+            <br>
+            <label>Water Consumption 06 :</label> <input type="number" id="water6" placeholder="water">
+            <br>
+            <label>Water Consumption 07 :</label> <input type="number" id="water7" placeholder="water">
+            <br>
+            <label>Water Consumption 08 :</label> <input type="number" id="water8" placeholder="water">
+            <br>
+            <label>Water Consumption 09 :</label> <input type="number" id="water9" placeholder="water">
+            <br>
+            <label>Water Consumption 10 :</label> <input type="number" id="water10" placeholder="water">
+            <br>
+
+            <button id="wdone">Water drank for now</button>
+            <button id="wcompleted">Water drank for today</button>
+            <br>
+            <span id="remainingWater"></span>
+        </div> 
+
+ 		<p><h3>Add Food Items:</h3></p>
+        
+        <div id="breakfast">
+        	<p><h3>Breakfast:</h3></p>
+
+        	<label>Food item 1:  </label><input type="text" id="bf1" placeholder="enter your food item"> 
+        	<label>Calories in it:  </label><input type="number" id="bcal1" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="bcarb1" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="bfat1" placeholder="fat">
+
+            <br>
+
+        	<label>Food item 2:  </label><input type="text" id="bf2" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="bcal2" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="bcarb2" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="bfat2" placeholder="fat">
+
+            <br>
+
+        	<label>Food item 3:  </label><input type="text" id="bf3" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="bcal3" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="bcarb3" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="bfat3" placeholder="fat">
+
+            <br>
+
+        	<label>Food item 4:  </label><input type="text" id="bf4" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="bcal4" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="bcarb4" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="bfat4" placeholder="fat">
+
+            <br>
+
+        	<label>Food item 5:  </label><input type="text" id="bf5" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="bcal5" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="bcarb5" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="bfat5" placeholder="fat">
+
+            <br><br>
+            <button id="bfdone">Breakfast done</button>
+            <br>
+        	<span id="remainingbf"></span>
+        </div>
+
+        
+        <div id="lunch">
+        	<p><h3>Lunch:</h3></p>
+
+        	<label>Food item 1:  </label><input type="text" id="lunch1" placeholder="enter your food item"> 
+        	<label>Calories in it:  </label><input type="number" id="lcal1" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="lcarb1" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="lfat1" placeholder="fat">
+            <br>
+
+        	<label>Food item 2:  </label><input type="text" id="lunch2" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="lcal2" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="lcarb2" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="lfat2" placeholder="fat">
+            <br>
+
+        	<label>Food item 3:  </label><input type="text" id="lunch3" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="lcal3" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="lcarb3" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="lfat3" placeholder="fat">
+            <br>
+
+        	<label>Food item 4:  </label><input type="text" id="lunch4" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="lcal4" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="lcarb4" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="lfat4" placeholder="fat">
+            <br>
+
+        	<label>Food item 5:  </label><input type="text" id="lunch5" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="lcal5" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="lcarb5" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="lfat5" placeholder="fat">
+        	
+            <br><br>
+            <button id="lunchdone">Lunch done</button>
+            <br>
+        	<span id="remaininglunch"></span>
+        </div>
+
+        
+        <div id="snacks">
+        	<p><h3>Snacks:</h3></p>
+        	<label>Food item 1:  </label><input type="text" id="snack1" placeholder="enter your food item"> 
+        	<label>Calories in it:  </label><input type="number" id="scal1" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="scarb1" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="sfat1" placeholder="fat">
+            <br>
+
+        	<label>Food item 2:  </label><input type="text" id="snack2" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="scal2" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="scarb2" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="sfat2" placeholder="fat">
+            <br>
+
+        	<label>Food item 3:  </label><input type="text" id="snack3" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="scal3" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="scarb3" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="sfat3" placeholder="fat">
+            <br>
+
+        	<label>Food item 4:  </label><input type="text" id="snack4" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="scal4" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="scarb4" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="sfat4" placeholder="fat">
+            <br>
+
+        	<label>Food item 5:  </label><input type="text" id="snack5" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="scal5" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="scarb5" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="sfat5" placeholder="fat">
+            <br><br>
+            <button id="snacksdone">Snacks done</button>
+            <br>
+            <span id="remainingsnacks"></span> 
+        </div>
+
+        
+ 		<div id="dinner">
+        	<p><h3>Dinner:</h3></p>
+        	<label>Food item 1:  </label><input type="text" id="dinner1" placeholder="enter your food item"><label> Calories in it:  </label><input type="number" id="dcal1" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="dcarb1" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="dfat1" placeholder="fat">
+            <br>
+
+        	<label>Food item 2:  </label><input type="text" id="dinner2" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="dcal2" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="dcarb2" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="dfat2" placeholder="fat">
+            <br>
+
+        	<label>Food item 3:  </label><input type="text" id="dinner3" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="dcal3" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="dcarb3" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="dfat3" placeholder="fat">
+            <br>
+
+        	<label>Food item 4:  </label><input type="text" id="dinner4" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="dcal4" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="dcarb4" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="dfat4" placeholder="fat">
+
+            <br>
+
+        	<label>Food item 5:  </label><input type="text" id="dinner5" placeholder="enter your food item">
+        	<label>Calories in it:  </label><input type="number" id="dcal5" placeholder="calories">
+            <label>Carbs in it:  </label><input type="number" id="dcarb5" placeholder="carbs">
+            <label>Fat in it:  </label><input type="number" id="dfat5" placeholder="fat">
+
+            <br><br>
+            <button id="dinnerdone">Dinner done</button>
+            <br>
+        	<span id="remainingdinner"></span>
+        </div>
+ 	    
+ 	</div>
+ 	
+ 	<script type="text/javascript">
+
+        document.getElementById("finalCalorie").value=localStorage.getItem("passCalorie");
+        document.getElementById("finalWater").value=localStorage.getItem("passWater");
+
+ 		document.getElementById("input2").onchange=()=>{
+ 			var calorieRequirement=Number(document.getElementById("finalCalorie").value);
+ 			var breakfast=Number(document.getElementById("bcal1").value)+Number(document.getElementById("bcal2").value)+Number(document.getElementById("bcal3").value)+Number(document.getElementById("bcal4").value)+Number(document.getElementById("bcal5").value);
+ 			var afterbreakfast=calorieRequirement-breakfast;
+ 			 
+ 			 document.getElementById("bfdone").onclick=()=>{
+ 			 	document.getElementById("remainingbf").innerHTML="Calories remaining today after breakfast: "+afterbreakfast +" kcals";
+ 			 }
+
+ 			var lunch=Number(document.getElementById("lcal1").value)+Number(document.getElementById("lcal2").value)+Number(document.getElementById("lcal3").value)+Number(document.getElementById("lcal4").value)+Number(document.getElementById("lcal5").value);
+ 			var afterlunch=afterbreakfast-lunch;
+ 			
+ 			document.getElementById("lunchdone").onclick=()=>{
+ 				document.getElementById("remaininglunch").innerHTML="Calories remaining today after lunch: "+afterlunch +" kcals";
+ 			}
+
+ 			var snacks=Number(document.getElementById("scal1").value)+Number(document.getElementById("scal2").value)+Number(document.getElementById("scal3").value)+Number(document.getElementById("scal4").value)+Number(document.getElementById("scal5").value);
+ 			var aftersnacks=afterlunch-snacks;
+ 			
+ 			document.getElementById("snacksdone").onclick=()=>{
+ 				document.getElementById("remainingsnacks").innerHTML="Calories remaining today after snacks: "+aftersnacks +" kcals";
+ 			}
+
+ 			var dinner=Number(document.getElementById("dcal1").value)+Number(document.getElementById("dcal2").value)+Number(document.getElementById("dcal3").value)+Number(document.getElementById("dcal4").value)+Number(document.getElementById("dcal5").value);
+ 			var afterdinner=aftersnacks-dinner;
+ 			
+ 			document.getElementById("dinnerdone").onclick=()=>{
+ 				document.getElementById("remainingdinner").innerHTML="Calories remaining today after dinner: "+afterdinner +" kcals";
+
+ 				if(afterdinner>0){
+             	alert("Eat more tommorrow than today");
+                }
+                else if(afterdinner<0){
+         	    alert("Eat less tommorrow than today");
+                }
+                else if(afterdinner==0){
+         	    alert("Good going..Keep it up");
+                }
+ 			}
+            var waterRequirement=Number(document.getElementById("finalWater").value);
+            var water= Number(document.getElementById("water1").value)+Number(document.getElementById("water2").value)+Number(document.getElementById("water3").value)+Number(document.getElementById("water4").value)+Number(document.getElementById("water5").value)+Number(document.getElementById("water6").value)+Number(document.getElementById("water7").value)+Number(document.getElementById("water8").value)+Number(document.getElementById("water9").value)+Number(document.getElementById("water10").value);
+            let afterwater=waterRequirement-water;
+
+            document.getElementById("wdone").onclick=()=>{
+                document.getElementById("remainingWater").innerHTML="Water remaining for today: "+afterwater+"mL";
+            }
+
+            document.getElementById("wcompleted").onclick=()=>{
+                if(afterwater>0){
+                    alert("Tommorrow, drink water more than today");
+                }
+
+                else if(afterwater<0){
+                    alert("you drank more than the requirement");
+                }
+                else if(afterwater==0){
+                    alert("Good going..Keep it up");
+                }
+            }
+
+        }
+
+         
+ 		
+
+ 	</script>
+ </body>
+</html>
 
  		<label><h3>Your daily calorie requirement:(in kcals) </h3></label><input type="number" id="finalCalorie" placeholder="calorie requirement">
  	    
