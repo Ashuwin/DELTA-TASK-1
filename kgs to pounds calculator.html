@@ -6,6 +6,7 @@
 	<p >Your weight(in kgs)</p>
 	<input type="number" id="kgs">
 	<button>convert</button>
+	<a href="index.html">Done</a>
 
 	<p >Your weight(in pounds)<span id="answer">0</span></p>
 	<script>
@@ -13,8 +14,9 @@
 		
         var conversion=()=>{
         	
-            
-        	document.getElementById("answer").innerHTML='<br>'+(document.getElementById("kgs").value)*2.20462262185;
+            var ashuwin = (document.getElementById("kgs").value)*2.20462262185;
+        	document.getElementById("answer").innerHTML=ashuwin;
+        	localStorage.setItem("kg2lb",ashuwin);
 
         }
 
