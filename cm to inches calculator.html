@@ -5,10 +5,12 @@
 <body>
 	<p >Your height(in cms)</p>
 	<input type="number" id="cms">
-	<button>convert</button>
+	<button ">convert</button>
+
+	<a href="index.html">Done</a>
 
 	<p id="inches">Your height(in inches)<span id="answer">0</span></p>
-	<div id="output"></div>
+	
 	<script>
 
 		
@@ -16,11 +18,14 @@
         	
             var Ashuwin=(document.getElementById("cms").value)/2.54
         	document.getElementById("answer").innerHTML=Ashuwin.toFixed(2);
+        	localStorage.setItem("cm2inch",Ashuwin);
 
         }
 
         var btn=document.querySelector("button");
         btn.addEventListener("click",conversion);
+ 
+
        
        
      </script>
